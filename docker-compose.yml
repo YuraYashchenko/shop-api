@@ -17,9 +17,6 @@ services:
     image: mongo:latest
     volumes:
       - dbdata:/data
-    environment:
-      - MONGO_ROOT_USERNAME = root
-      - MONGO_ROOT_PASSWORD = root
     networks:
       - appnet
 networks:
